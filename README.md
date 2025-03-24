@@ -12,41 +12,25 @@ This project is a simple **Django web application** that runs inside a **Docker 
 ✅ CI/CD Pipeline with Jenkins  
 ✅ Docker image pushed to **Docker Hub**  
 
----
-
-## 📂 Folder Structure
-DjangoDockerProject/ │── Assignment/ # Main Django Project │ ├── settings.py │ ├── urls.py │ ├── wsgi.py │ ├── asgi.py │ ├── init.py │ ├── manage.py │ │── app1/ # First Django App │── app2/ # Second Django App │── Dockerfile # Docker Configuration │── Jenkinsfile # CI/CD Pipeline Configuration │── README.md # Documentation │── .gitignore # Ignore unnecessary files
-
-yaml
-Copy
-Edit
-
----
 
 ## 🚀 How to Run the Project Locally
 ### 🔹 **Step 1: Clone the Repository**
-```sh
+
 git clone https://github.com/AdarshBhoutekar/DjangoDockerProject.git
 cd DjangoDockerProject
-🔹 Step 2: Build and Run with Docker
-sh
-Copy
-Edit
+
+### 🔹 Step 2: Build and Run with Docker
 docker build -t assignment_project .
 docker run -p 8000:8000 assignment_project
-🔹 Step 3: Access the Web App
+
+### 🔹 Step 3: Access the Web App
 Open your browser and go to:
 
-cpp
-Copy
-Edit
 http://127.0.0.1:8000/
+
 🐳 Docker Hub Repository
 You can pull the Docker image from Docker Hub using:
 
-sh
-Copy
-Edit
 docker pull adarshhh1/assignment_project
 🔗 Docker Hub Repository Link:
 👉 https://hub.docker.com/repository/docker/adarshhh1/assignment_project
